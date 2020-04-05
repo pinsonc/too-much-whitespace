@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Too much whitespace?</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body></body>
+<header>
+  <h2>No such thing!</h2>
+</header>
+
+<section>
+  <article>
+    <p>Whether it's in UI design or coding practice, you can never have too much whitespace.</p>
+    <h1>UI design</h1>
+    <img width="500px" height = 600px src='assets/ui.jpg'/>
+    <p>Shoutout to <a href='https://twitter.com/dgkeyes/status/1082682462990286853'>David Keyes on Twitter.</a></p>
+    <p>Putting more whitespace in your UI can prevent unintended clicks as well as direct the user's eye to the correct place.</p>
+    <p>It can also make your app look less "busy" or "cluttered".</p>
+    <h1>Coding</h1>
+    <img width = "90%" height = "600px" src='assets/textpng.png'/>
+    <p>I think this shows the value of having space between lines and words.</p>
+    <p>There are, admittedly, more considerations when coding. For example, do I want this whole method to fit on my screen? Can I easily trace scope-defining characters, and more.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Conner Pinson, 2020</p>
+</footer>
+
+</body>
+</html>
